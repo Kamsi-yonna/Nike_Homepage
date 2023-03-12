@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    
+  <meta charset="UTF-8">
+    
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+  <title>Nike Home Page</title>
+    
+  <link rel="stylesheet" href="style.css">
+    
+</head>
+    
+<body>
+    
+    <div class="container" >
+        
+        <div class="navbar">
+            
+            <img src="images/NikeSwoosh.png" class="logo" alt="logo-here">
+            
+            <ul>
+          
+        <li><a href="#">Home</a></li>
+          
+        <li><a href="#">Products</a></li>
+          
+        <li><a href="#">What's New</a></li>
+          
+        <li><a href="#">Newsletter</a></li>
+          
+        <li><a href="#">Contact</a></li>
+          
+      </ul>
+    
+          </div>
+        
+        <div class="content">
+        
+      <div class="textBox">
+          
+        <h2>JUST<br><span>do it!</span></h2>
+          
+        <p>When performance is what you’re looking for, look no further than the all-new Nike Air Max Plus 
+        </p>
+                    
+        <button type="button"><span></span>Explore All Products</button>
+
+      </div>
+        
+      <div class="Showcase">
+          
+        <img src="images/J1.png" class="slider" >
+          
+      </div>
+        
+    </div>
+        
+        <div class="footer">
+        
+        <ul class="thumb">
+        
+      <li><img src="images/J1.png" onclick="imgSlider('images/J1.png');
+          changeBgColor('#0062be')"></li>
+        
+      <li><img src="images/J3.png" onclick="imgSlider('images/J3.png'); changeBgColor('#e60c2c')"></li>
+        
+      <li><img src="images/J4.png" onclick="imgSlider('images/J4.png'); changeBgColor('#1e1e1e')"></li>
+        
+    </ul>
+        
+    <ul class="social-tags">
+      <li><a href="#"><img src="images/facebook.png"></a></li>
+      <li><a href="#"><img src="images/twitter.png"></a></li>
+      <li><a href="#"><img src="images/instagram.png"></a></li>
+    </ul>
+    
+    </div>
+    
+    </div>
+
+             
+</body>
+    
+   <script type="text/javascript">
+       
+    function imgSlider(anything){
+     document.querySelector('.slider').src = anything;
+    }
+    function changeBgColor(color) {
+      const container = document.querySelector('.container');
+      container.style.background = color;
+    }
+  </script>
+    
+    
+    
+</html>
+
+
+
+
+
